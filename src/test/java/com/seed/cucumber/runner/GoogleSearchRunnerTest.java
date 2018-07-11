@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         , glue = "com.seed.cucumber.steps"
         , format = {"pretty", "html:target/cucumber"}
 )
-public class GoogleSearchRunner extends BaseRunner {
+public class GoogleSearchRunnerTest extends BaseRunner {
 
     @BeforeClass
     public static void setUpSuite(){

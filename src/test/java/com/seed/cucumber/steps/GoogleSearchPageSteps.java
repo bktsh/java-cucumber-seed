@@ -2,7 +2,6 @@ package com.seed.cucumber.steps;
 
 import com.seed.cucumber.TestRunner;
 import com.seed.cucumber.pages.GoogleSearchPage;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
