@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "classpath:feature"
         , tags = "@Working"
         , glue = "com.seed.cucumber.steps"
-        , format = {"pretty", "html:target/cucumber"}
+        , format = {"pretty", "json:target/cucumber.json"}
+//        , format = {"pretty", "html:target/cucumber"}
 )
 public class GoogleSearchRunnerTest extends BaseRunner {
 
