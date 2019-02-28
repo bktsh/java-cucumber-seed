@@ -2,6 +2,8 @@ package com.seed.cucumber.steps;
 
 import com.seed.cucumber.TestRunner;
 import com.seed.cucumber.pages.GoogleSearchPage;
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -21,7 +23,7 @@ public class GoogleSearchPageSteps {
         TestRunner.webDriver.get(TestRunner.baseUrl);
     }
 
-    @When("^I search (.*?)$")
+    @And("^I search (.*?)$")
     public void i_search_Abercrombie_and_Fitch_home_office_address(String query) throws Throwable {
         initGoogleSearchPage();
         googlePage.query.sendKeys(query);
@@ -35,5 +37,8 @@ public class GoogleSearchPageSteps {
     }
 
 
-
+    @Then("^I am good$")
+    public void iAmGood() throws Throwable {
+        System.out.println("I am good!");
+    }
 }
